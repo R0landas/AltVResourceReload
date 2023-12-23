@@ -10,7 +10,7 @@ public class AltResource : Resource
     
     public override void OnStart()
     {
-        var rawConfig = File.ReadAllText("resources/ResourceLoader/config.json");
+        var rawConfig = File.ReadAllText("resources/ResourceReload/config.json");
         var config = JsonSerializer.Deserialize<ResourceLoaderConfig>(rawConfig, new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true
